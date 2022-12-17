@@ -1,0 +1,9 @@
+<p class="hint" *ngIf="!isStopped">Double click anywhere to pause</p>
+<div class="container">
+    <p class="timer">{{timer}}</p>
+
+    <div class="buttons">
+        <button class="btn btn--main" [class.btn--red]="!isStopped" (click)="startStop()">{{buttonText}}</button>
+        <button class="btn btn--reset" (click)="reset()">Reset</button>
+    </div>
+</div>
